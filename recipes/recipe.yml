@@ -29,7 +29,6 @@ modules:
         - fedora-release-kinoite-mobile
         ## waydroid things
         - waydroid
-        - cage
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -52,8 +51,9 @@ modules:
           - org.kde.kweather
           - org.kde.kclock
       - scope: user # Also add Flathub user repo, but no user packages
-  - type: script
-    scripts:
-    - init-waydroid.sh # example: run files/scripts/myscript.sh
-  
+
+  #- type: script
+    #scripts:
+    #- init-waydroid.sh # example: run files/scripts/myscript.sh
+
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
